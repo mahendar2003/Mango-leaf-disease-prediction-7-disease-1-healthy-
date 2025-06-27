@@ -1,0 +1,265 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    padding: 8px 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+    color: #333;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-box {
+    background-color: #e9ecef;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #ccc;
+}
+
+.info-box h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.info-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+.info-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Slider */
+.slider {
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.slider p {
+    font-style: italic;
+}
+
+.slider .slider-box {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.slider .slider-box input {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.slider .slider-box input:hover {
+    background-color: #0056b3;
+}
+
+/* Prediction Section */
+.predict-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.predict-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.predict-section button {
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.predict-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .info-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .predict-section button {
+        width: 100%;
+    }
+
+    .slider .slider-box input {
+        width: 100%;
+    }
+}
+
+/* Form and Input Styles */
+input[type="file"], input[type="text"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="file"]:focus, input[type="text"]:focus, input[type="number"]:focus, textarea:focus {
+    border-color: #007bff;
+}
+
+/* Modals */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Button Hover Transition */
+button, .slider .slider-box input {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover, .slider .slider-box input:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

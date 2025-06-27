@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango Disease Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">MangoCare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#diseases">Diseases</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#predict">Predict</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container text-center">
+            <h1 class="hero-title animate__animated animate__fadeInDown">Mango Disease Detection</h1>
+            <p class="hero-subtitle animate__animated animate__fadeInUp">AI-powered mango disease prediction at your fingertips. A Deep Learning Project which uses CNN model for Prediction</p>
+            <a href="#predict" class="cta-button animate__animated animate__zoomIn">Get Started with Prediction</a>
+        </div>
+    </header>
+
+<!-- About Section -->
+<section id="about" class="about py-5">
+    <div class="container text-center">
+        <h2 class="section-title">About MangoCare</h2>
+        <p class="section-description">
+            MangoCare is an innovative AI-powered platform dedicated to assisting mango farmers in identifying and managing plant diseases with precision and efficiency. Our mission is to enhance mango cultivation by providing accurate, timely, and actionable insights, enabling farmers to protect their crops, reduce losses, and increase productivity.
+        </p>
+        <p class="section-description">
+            Leveraging state-of-the-art machine learning algorithms and a comprehensive database of mango diseases, MangoCare analyzes images of mango leaves to detect a wide range of common and critical diseases. By offering early detection, our platform empowers farmers to take proactive measures, ensuring the health and vitality of their mango orchards.
+        </p>
+        <h3 class="mt-4">Key Features:</h3>
+        <ul class="list-unstyled mt-3">
+            <li><i class="fas fa-check-circle text-success me-2"></i><strong>Accurate Detection :</strong> Utilizes advanced AI models to ensure precise identification of mango plant diseases.</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i><strong> Comprehensive Database :</strong> Covers seven common mango diseases, including Anthracnose, Bacterial Canker, Cutting Weevil, Die Back, Gall Midge, Powdery Mildew, and Sooty Mould.</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i><strong> User-Friendly Interface :</strong> Designed for ease of use, allowing farmers of all technical backgrounds to navigate and utilize the platform effectively.</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i> <strong> Insights :</strong> Provides detailed descriptions and recommended treatments for each detected disease, aiding in informed decision-making.</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i><strong> Mobile Accessibility :</strong> Accessible on various devices, enabling farmers to use the tool in the field with ease.</li>
+        </ul>
+        <p class="section-description mt-4">
+           <strong> At MangoCare, we are committed to supporting the agricultural community by integrating technology with traditional farming practices. Our platform not only helps in disease detection but also educates farmers on best practices for disease management and prevention, fostering sustainable and profitable mango farming.</strong>
+        </p>
+    </div>
+</section>
+    <!-- Diseases Section -->
+    <section id="diseases" class="diseases py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Common Mango Diseases</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="disease-card">
+                        <img src="static/images/anthracnose.jpg" alt="Anthracnose" class="img-fluid rounded">
+                        <h3 class="disease-title">Anthracnose</h3>
+                        <p class="disease-description">Black lesions caused by fungal infections.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="disease-card">
+                        <img src="static/images/bacterial_canker.jpg" alt="Bacterial Canker" class="img-fluid rounded">
+                        <h3 class="disease-title">Bacterial Canker</h3>
+                        <p class="disease-description">Lesions and dieback caused by bacteria.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="disease-card">
+                        <img src="static/images/powdery_mildew.jpg" alt="Powdery Mildew" class="img-fluid rounded">
+                        <h3 class="disease-title">Powdery Mildew</h3>
+                        <p class="disease-description">White, powdery fungal growth on leaves.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="disease-card">
+                        <img src="static/images/cutting_weevil.jpg" alt="Cutting Weevil" class="img-fluid rounded">
+                        <h3 class="disease-title">Cutting Weevil</h3>
+                        <p class="disease-description">A pest that damages mango stems and fruits.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="disease-card">
+                        <img src="static/images/die_back.jpg" alt="Die Back" class="img-fluid rounded">
+                        <h3 class="disease-title">Die Back</h3>
+                        <p class="disease-description">A fungal disease causing branches to wither and die.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="disease-card">
+                        <img src="static/images/gall_midge.jpg" alt="Gall Midge" class="img-fluid rounded">
+                        <h3 class="disease-title">Gall Midge</h3>
+                        <p class="disease-description">Insects that form galls on leaves, reducing yield.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="disease-card">
+                        <img src="static/images/sooty_mould.jpg" alt="Sooty Mould" class="img-fluid rounded">
+                        <h3 class="disease-title">Sooty Mould</h3>
+                        <p class="disease-description">Black, sooty patches caused by fungal infections.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="disease-card">
+                        <img src="static/images/healthy.jpg" alt="Healthy" class="img-fluid rounded">
+                        <h3 class="disease-title">Healthy</h3>
+                        <p class="disease-description">No visible disease detected.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prediction Section -->
+    <section id="predict" class="predict py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Upload Mango Leaf Image</h2>
+            <p class="section-description">Upload a mango leaf image, and our AI will detect potential diseases.</p>
+            <form action="/upload" method="POST" enctype="multipart/form-data" class="mt-4">
+                <input type="file" name="file" accept="image/*" class="form-control mb-3" required>
+                <button type="submit" class="btn btn-success">Upload and Predict</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Prediction Result Section -->
+    {% if disease_name %}
+    <section id="result" class="result py-5">
+        <div class="container text-center">
+            <h2 class="section-title">Prediction Result</h2>
+            <img src="{{ uploaded_image_url }}" alt="Uploaded Image" class="img-fluid rounded mb-4">
+            <h3>{{ disease_name }}</h3>
+            <p>{{ disease_description }}</p>
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-3 text-center">
+        <p>&copy; 2024 MangoCare. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
